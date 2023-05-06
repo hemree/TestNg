@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+
+
+    <!-- parallel="classes" ==> Her bir Thread(işlem) bir class ile yürür. Üzerine çalıştığı class'da işlemi bitince sırada ki class'a geçer -->
+    <!-- parallel="methods" ==> Her bir Thread(işlem) bir method ile yürür. Üzerine çalıştığı method'da işlemi bitince sırada ki class'a geçer -->
+    <!-- parallel çalışan testler birbirindeb bağımsız olmalıdır. Bağımlılığı olan testler paralel çalışmada hata verebilir -->
+
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ASUS/IdeaProjects/B129TestNGProject/src/test/java/techproed/tests/Day22_TestNG_Annotations">
+        <classes>
+            <class name="techproed.tests.Day22_TestNG_Annotations.Day22_TestNG_Annotations">
+                <methods>
+                    <include name="beforeSuite"/>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                    <include name="test05"/>
+                    <include name="test06"/>
+                    <include name="test07"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

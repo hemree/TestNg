@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Blue Rental Car Smoke Test " verbose="1" >
+    <test name="Smoke Test"   >
+        <packages>
+            <!-- Name değeri geçerli bir package olmalıdır -->
+            <!-- Çalıştımadan önce saveAll veya CTRL+S yapınız -->
+            <package name="techproed.tests.Day24_Properties_Pages.SmokeTest" />
+            <package name="techproed.tests.Day26_DataProvider" />
+        </packages>
+    </test>
+</suite>
+
+
+
+
+
